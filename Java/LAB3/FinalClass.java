@@ -1,10 +1,8 @@
 //prog to show final class cannot be inherited
 
+final class A {
 
-final class A
-{
-
-int a=10;
+    int a = 10;
 
 }
 
@@ -12,11 +10,9 @@ class FinalClass extends A
 
 {
 
-public static void main()
-{
+    public static void main() {
 
-System.out.println("inside main");
-}
-
+        System.out.println("inside main");
+    }
 
 }
