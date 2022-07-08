@@ -20,7 +20,7 @@ class B extends A {
 /**
  * Mlevelinheritance
  */
-public class Mlevelinheritance extends B {
+ class Mlevelinheritance extends B {
     public static void main(String args[]) {
         Mlevelinheritance obj = new Mlevelinheritance();
         System.out.println(obj.a + obj.b);
