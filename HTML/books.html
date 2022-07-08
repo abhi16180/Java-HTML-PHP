@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>Page Title</title>
+    <link rel='stylesheet' href='style.css' type='text/css' media='screen' charset='utf-8' />
+    <style>
+        .box {
+
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border: solid black 2px;
+
+        }
+
+        .line {
+            height: 2px;
+            width: 500px;
+            background-color: black;
+
+        }
+
+        #field {
+            margin-top: 30px;
+        }
+
+        form {
+            margin-left: 100px;
+        }
+
+        #button {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Book Information</p>
+        <div class="line"></div>
+        <form>
+            <label for="author" id="field">Author</label>
+            <input type="text" id="field"><br>
+            <label for="title" id="field">Title</label>
+            <input type="text" id="field"><br>
+            <label for="price" id="field">Price</label>
+            <input type="number" id="field"><br>
+            <br>
+            <input type="submit" value="Submit" id="button">
+            <input type="reset" value="reset" id="button">
+
+        </form>
+    </div>
+</body>
+
+</html>
