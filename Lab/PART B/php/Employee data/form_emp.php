@@ -1,4 +1,3 @@
-</html>
 <!DOCTYPE html>
 <html>
  
@@ -26,8 +25,10 @@
     $dbname = "sample";
     $conn = new mysqli($host, $username, $password, $dbname);
     if ($conn->connect_error) {
-        die("connection failed" . $conn->connect_error);
+        // die("connection failed" . $conn->connect_error);
+        echo "error";
     } else {
+        
         if (isset($_POST["save"])) {
             $id = $_POST["id"];
             $name = $_POST["name"];

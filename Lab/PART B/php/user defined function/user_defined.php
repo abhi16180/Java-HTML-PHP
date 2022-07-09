@@ -19,6 +19,7 @@
 
     $associativeArray = associative();
     echo "<table border=2px width=400px><tr><th>Key</th><th>Value</th></tr>";
+    
     foreach ($associativeArray as $key => $value) {
         echo "<tr><td>" . $key . "</td><td>" . $value . "</td></tr>";
     }

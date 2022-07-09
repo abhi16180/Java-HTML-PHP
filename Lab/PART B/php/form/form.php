@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,31 +12,39 @@
         td {
             border: 1px solid black;
         }
- 
+
         th,
         td {
             padding: 15px;
         }
     </style>
- 
+
 </head>
- 
+
 <body>
     <?php
-    if (isset($_POST["save"])) {
-        $name = $_POST["name"];
-        $age = $_POST["age"];
-        $gender = $_POST["gender"];
- 
-        echo "<table>";
-        echo "<tr> <th>Employee name</th><td>$name</td></tr>";
-        echo "<tr> <th>Employee age</th><td>$age</td></tr>";
-        echo "<tr> <th>Employee gender</th><td>$gender</td></tr>";
-        echo "</table>";
+    $h = "localhost";
+    $u = "root";
+    $p = "";
+    $d = "sample";
+    $conn = new mysqli($h, $u, $p, $d);
+    if ($conn->connect_error) {
+        echo "error";
+    } else {
+
+        if (isset($_POST["save"])) {
+            $id = $_POST["id"];
+            $qry = "select * from emp where id=" . $id;
+            $res = $conn->query($qry);
+            if ($res->num_rows > 0) {
+                $row = $res->fetch_assoc();
+                echo "<table><tr><th>Name</th><td>".$row["name"]."</td></tr> <tr><th>ID</th><td>".$row["id"]."</td></tr></table>";
+            }
+        }
     }
- 
- 
+
+
     ?>
 </body>
- 
+
 </html>
