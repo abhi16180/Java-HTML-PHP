@@ -1,9 +1,5 @@
-import java.io.FileReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Scanner;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.lang.Exception;
 
 public class ReadFile {
@@ -25,14 +21,14 @@ public class ReadFile {
                 System.out.print((char) c);
             }
 
-            // reading file using FileInputStream
+            // reading file using FileInputStream & BufferedReader
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(f)));
             String s;
             System.out.println("\nDisplaying data using FileInputStream");
             while ((s = br.readLine()) != null) {
                 System.out.println(s);
             }
-
+            //optional
             fr.close();
             br.close();
             sc.close();
