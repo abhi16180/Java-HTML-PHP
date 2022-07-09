@@ -13,7 +13,13 @@ public class ThreadMethods extends Thread
 public void run()
 {
 
-System.out.println("Current thread is "+Thread.currentThread().getName());
+try{
+      System.out.println("Current thread is "+Thread.currentThread().getName());
+      sleep(2500);
+}
+catch(Exception e){
+      System.out.println(e);
+}
 
 }
 

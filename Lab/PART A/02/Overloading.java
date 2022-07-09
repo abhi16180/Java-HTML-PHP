@@ -21,6 +21,7 @@ public class Overloading {
         // constructor overloading
         Overloading obj1 = new Overloading();
         Overloading obj2 = new Overloading("Matrix");
+        //method overloading
         obj1.display("Display funtion with one argumennt");
         obj1.display("Display funtion", "with two arguments");
     }
