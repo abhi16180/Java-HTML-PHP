@@ -1,0 +1,3 @@
+
+    void arithmetic() {
+        try {

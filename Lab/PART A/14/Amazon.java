@@ -1,7 +1,7 @@
 // Assume  that  only  one  copy  of  the  book  is  available  in Amazon 
 // and  four  customers  are trying  to  place  the  order for book  at 
 // the same  time. Write  a java  program  using  threads  which  prints
-// book  confirmed  for  one  person  and  “out  of stock” for others.
+// book  confirmed  for  one  person  and  out  of stock for others.
 class Amazon extends Thread {
     static int availableItems = 1;
 
