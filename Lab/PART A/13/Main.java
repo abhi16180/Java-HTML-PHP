@@ -12,19 +12,20 @@ class MyThread extends Thread {
 
 }
 
-class Threads extends Thread {
+class Main extends Thread {
 
     public static void main(String args[]) {
         System.out.println("Current thread is " + Thread.currentThread().getName());
         MyThread t1 = new MyThread();
-        System.out.println("T1 ->" + t1.isAlive());
+        System.out.println("is t1 Alive ?" + t1.isAlive());
         t1.start();
         try {
-            System.out.println("T1->" + t1.isAlive());
+            System.out.println("is t1 Alive ?" + t1.isAlive());
             t1.join();
         } catch (Exception e) {
             System.out.println(e);
         }
-
+        System.out.println("Is t1 Alive?"+t1.isAlive());
+        System.out.println("Is main Alive?"+Thread.currentThread().isAlive());
     }
 }
