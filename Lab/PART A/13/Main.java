@@ -18,8 +18,10 @@ class Main extends Thread {
         System.out.println("Current thread is " + Thread.currentThread().getName());
         MyThread t1 = new MyThread();
         System.out.println("is t1 Alive ?" + t1.isAlive());
+        t1.setPriority(10);
         t1.start();
         try {
+            System.out.println("priority "+ t1.getPriority());
             System.out.println("is t1 Alive ?" + t1.isAlive());
             t1.join();
         } catch (Exception e) {
