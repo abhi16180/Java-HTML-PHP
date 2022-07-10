@@ -23,9 +23,9 @@ public class StringOp {
         System.out.println("String Empty function");
 
         System.out.println("Source String: " + s1);
-        char[] dest = s1.toCharArray();
-        for (char c : dest)
-            System.out.print(c + " ");
+        // char[] dest = s1.toCharArray();
+        // for (char c : dest)
+        //     System.out.print(c + " ");
         System.out.println("\n\nSubstring function");
         System.out.println("Source String: " + s1);
         System.out.println("Substring from 6 to 10: " + s1.substring(6, 11) + "\n");
@@ -38,10 +38,10 @@ public class StringOp {
         System.out.println(ss.isBlank());
         System.out.println(ss.isEmpty());
 
-        String str = "Madam";
+        String str = "madam";
         StringBuffer sb = new StringBuffer(str);
         System.out.println("Reversed string is "+sb.reverse());
-
+       
         str="hey this is abhilash";
         String [] stringArray=str.split(" ");
         for(String s:stringArray){

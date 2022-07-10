@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
  
-class server {
+class Server {
  
     public static void main(String args[]) throws IOException {
  
