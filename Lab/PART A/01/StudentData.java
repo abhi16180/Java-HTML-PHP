@@ -15,7 +15,7 @@ class StudentData {
         this.usn = usn;
     }
 
-    void setBrnach(String branch) {
+    void setBranch(String branch) {
         this.branch = branch;
     }
 
@@ -31,7 +31,7 @@ class StudentData {
         return this.usn;
     }
 
-    String getBrnach() {
+    String getBranch() {
         return this.branch;
     }
 
@@ -53,7 +53,7 @@ class StudentData {
             System.out.println("Enter student usn");
             studentArray[i].setUsn(sc.next());
             System.out.println("Enter student branch");
-            studentArray[i].setBrnach(sc.next());
+            studentArray[i].setBranch(sc.next());
             System.out.println("Enter student phone number");
             studentArray[i].setPhone(sc.next());
         }
@@ -62,7 +62,7 @@ class StudentData {
         for (int i = 0; i < size; i++) {
             System.out.println("Student "+(i+1)+" data");
             System.out.println("Name ->" + studentArray[i].getName() + "\nUSN ->" + studentArray[i].getUsn() + "\nBranch ->"
-                    + studentArray[i].getBrnach() + "\nPhone ->" + studentArray[i].getPhone());
+                    + studentArray[i].getBranch() + "\nPhone ->" + studentArray[i].getPhone());
         }
         sc.close();
 
