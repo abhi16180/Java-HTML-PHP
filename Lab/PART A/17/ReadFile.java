@@ -5,14 +5,12 @@ import java.lang.Exception;
 public class ReadFile {
     public static void main(String args[]) throws Exception {
         // to get the file path the user input
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the file name");
         String filePath = sc.next();
         // to open a file
         File f = new File(filePath);
         if (f.exists()) {
-
             // reading file using FileReader
             FileReader fr = new FileReader(f);
             int c;

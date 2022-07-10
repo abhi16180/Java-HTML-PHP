@@ -1,8 +1,12 @@
+import java.lang.NullPointerException;
 class ThrowsUsage {
 
     public static void main(String args[]) throws NullPointerException {
 
-        String s = null;
-        System.out.println(s.length());
+        try{
+            throw new NullPointerException();
+        }catch(NullPointerException npe){
+            System.out.println("Null pointer excp ");
+        }
     }
 }
