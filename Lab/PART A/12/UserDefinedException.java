@@ -1,24 +1,21 @@
 
 import java.lang.Throwable;
 
-class UserDefinedException{
+class UserDefinedException {
 
-    public static void main(String args[]) throws MyException{
+    public static void main(String args[]) throws MyException {
 
-
-        try{
-            throw  new MyException("User defined exception");
-        }
-        catch(MyException e){
+        try {
+            throw new MyException("User defined exception");
+        } catch (MyException e) {
             System.out.println(e.toString());
         }
     }
 }
 
+class MyException extends Exception {
 
-class MyException extends Exception{
-
-    MyException(String s){
+    MyException(String s) {
         super(s);
     }
 }

@@ -32,5 +32,21 @@ public class StringOp {
         System.out.println("String replace function");
         System.out.println("Source String: " + s1);
         System.out.println("Replacing l with $: " + s1.replace('l', '$'));
+
+        String ss = "    ";
+
+        System.out.println(ss.isBlank());
+        System.out.println(ss.isEmpty());
+
+        String str = "Madam";
+        StringBuffer sb = new StringBuffer(str);
+        System.out.println("Reversed string is "+sb.reverse());
+
+        str="hey this is abhilash";
+        String [] stringArray=str.split(" ");
+        for(String s:stringArray){
+            System.out.println(s);
+        }
+
     }
 }
